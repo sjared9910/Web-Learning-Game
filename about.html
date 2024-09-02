@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/general.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <script src="js/darkmode.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var highContrastMode = sessionStorage.getItem('highContrastMode');
+            if (highContrastMode === 'true') {
+                // Apply dark mode if the preference is set to true
+                toggleDarkMode();
+            }
+        });
+    </script>
+    <title>About Us</title>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="index.html">
+            <img class="logo" src="images/logo.jpg" alt="Logo">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="db_home.html">Database</a></li>
+
+            <div class="dropdown">
+                <button>Accessibility</button>
+                <div class="dropdown-content">
+                    <a href="visual.html">Visual</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <div class="about-box">
+        <img src="images/staff.png" alt="The founding team">
+    </div>
+    <div class="content">
+        <h1> About Us </h1>
+    </div>
+    <div class="about-content">
+        <p>
+            Welcome to Group4 Entertainment, where innovation meets engagement in the world of employee training. At Group4, we have recognized the growing challenges faced by companies in ensuring swift and effective onboarding for new team members, as well as the continuous development of existing talent within their roles.
+            <br><br>
+            In an era where employee tenure is on the decline, Group4 Entertainment has seeks to be at the forefront of solutions. Our core technology revolves around the creation of engaging training games designed to seamlessly elevate the knowledge and skills of both new and current employees. We believe that learning should be an immersive experience, and our training games are created to make the journey not only informative but also enjoyable.
+            <br><br>
+            Our mission is clear: To address the pressing need for quicker yet highly impactful training methodologies. We understand the urgency in acclimating new hires to their roles swiftly and in re-energizing current employees with refreshed perspectives on their responsibilities.
+            <br><br>
+            Join us on this exciting journey as we redefine the future of corporate training through interactive and engaging solutions. At Group4 Entertainment, we don't just bridge the knowledge gap; we turn learning into a thrilling experience that empowers individuals and transforms workplaces.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <script src="js/darkmode.js"></script>
+</head>
+
+
+<body>
+
+    <div class="logo-container">
+        <a href="index.html">
+            <img class="logo" src="logo.jpg" alt="Logo">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="db_home.html">Database</a></li>
+
+            <div class="dropdown">
+                <button>Accessibility</button>
+                <div class="dropdown-content">
+                    <a href="visual.html">Visual</a>
+                </div>
+            </div>
+        </ul>
+
+    </nav>
+
+    <header>
+    </header>
+
+  
+        <p>VISUAL SETTINGS</p>
+        <img class="EYE" src="images/eye.png" alt="EYE">
+    
+
+    <h4>High Contrast Mode</h4>
+    <label class="switch">
+        <input type="checkbox" id="high-contrast-toggle" onclick="toggleDarkMode()">
+        <span class="slider"></span>
+    </label>
+
+    <style>
+        p {
+            text-align: center;
+            font-size: 35px;
+            position: relative;
+            top: 50px;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 18px;
+            position: absolute;
+            left: 300px;
+            top: 300px;
+        }
+
+        EYE {
+
+            top: 100px;
+        }
+        .switch {
+            position: fixed;
+            width: 45px;
+            height: 22px;
+            margin: 0 auto;
+            top: 325px;
+            text-align: center;
+            margin-left: 50px;
+        }
+
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 20px;
+        }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 16px;
+                width: 16px;
+                left: 4px;
+                bottom: 3px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+                border-radius: 50%;
+            }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(22px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+    </style>
+
+</body>
+</html>

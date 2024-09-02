@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/*General Styles*/
+html 
+{
+	height: 100%;
+}
+body 
+{
+	min-height: 100%;
+	margin: 0 auto;
+	max-width: 1080px;
+	min-width: 640px;
+	width: 100%;
+	font-family: 'Georgia', serif;
+}
+body > nav
+{
+	list-style-type: none;
+	line-height: 1.5em;
+	font-size: 1.2em;
+	width: 20%;
+	float: left;
+	min-height: auto;
+	background: #ccc;
+	padding: 10px;
+	margin-right: 20px;
+}
+
+nav a:link, nav a:visited 
+{
+  text-decoration: none;
+  color: rgb(13, 19, 115);
+}
+nav a:hover, nav a:active 
+{
+  color: rgb(200, 35, 35);
+}
+#homepage h1
+{
+	line-height: 1.2em;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+body h2
+{
+	line-height: 1em;
+	font-size: 1.4em;
+	font-weight: bolder;
+	text-align: center;
+	padding-bottom: 10px;
+}
+body h3
+{
+	font-size: 1.2em;
+	font-weight: bolder;
+	text-align: left;
+}
+
+body p
+{
+	line-height: 1.2em;
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-left: 20px;
+	text-indent: 35px;
+}
+body input
+{
+	display: block;
+	width: 800px;
+	height: 24px;
+	font-size: 1.2em;
+}
+body button
+{
+	font-size: 1.2em;
+	height: 30px;
+	float: left;
+}
+.container
+{
+	font-size: 1.2em;
+}
+table, td
+{
+	border: 1px solid;
+	width:70%;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 3;
+}
+
+.logo {
+    max-width: 130px;
+    height: auto;
+    display: block;
+}

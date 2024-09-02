@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Database Backend New Subject</title>
+        <link href="css/db_style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header id="homepage">
+            <h1>Web Game Database Backend</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="db_home.html">Home</a></li>
+                <li><a href="#">New Subject</a></li>
+                <li><a href="php/db_newq.php">New Question</a></li>
+                <li><a href="php/db_dels.php">Delete Subject</a></li>
+                <li><a href="php/db_delq.php">Delete Question</a></li>
+                <li><a href="php/db_view.php">View Questions</a></li>
+            </ul>
+        </nav>
+        <section id="newSubject">
+            <h2>Create a New Subject</h2>
+            <form action="functions.php" method="post">       
+                <input type="hidden" name="action" value="newsubject"/>
+                Enter the Subject Name: <input type="text" name="subject"><br />
+                <button>Send</button>
+            </form>
+        </section>
+    </body>
+</html>
